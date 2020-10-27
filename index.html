@@ -12,6 +12,27 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap 5.0 -->
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+      integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
     <title>Frontend Mentor | Insure landing page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -26,24 +47,87 @@
     </style>
   </head>
   <body>
-    How we work Blog Account View plans Humanizing your insurance. Get your life
-    insurance coverage easier and faster. We blend our expertise and technology
-    to help you find the plan that’s right for you. Ensure you and your loved
-    ones are protected. View plans We’re different Snappy Process Our
-    application process can be completed in minutes, not hours. Don’t get stuck
-    filling in tedious forms. Affordable Prices We don’t want you worrying about
-    high monthly costs. Our prices may be low, but we still offer the best
-    coverage possible. People First Our plans aren’t full of conditions and
-    clauses to prevent payouts. We make sure you’re covered when you need it.
-    Find out more about how we work How we work Our company How we work Why
-    Insure? View plans Reviews Help me FAQ Terms of use Privacy policy Cookies
-    Contact Sales Support Live chat Others Careers Press Licenses
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="images/logo.svg" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse d-flex justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav align-items-center">
+            <a class="nav-link active ml-3" aria-current="page" href="#"
+              >How we work</a
+            >
+            <a class="nav-link ml-3" href="#">Blog</a>
+            <a class="nav-link ml-3" href="#">Account</a>
+            <a class="nav-link ml-3" href="#"
+              ><button class="btn btn-outline-dark my-btn">
+                View Plans
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section class="hero-section">
+      <div class="container">
+        <div class="row">
+          <div class="hero-text-section col-md-6 align-self-center">
+            <hr class="bar" />
+
+            <h1 class="hero-heading">
+              Humanizing <br />
+              your insurance.
+            </h1>
+            <p class="hero-p">
+              Get your life insurance coverage easier and faster. We blend our
+              expertise and technology to help you find the plan that’s right
+              for you. Ensure you and your loved ones are protected.
+            </p>
+            <button class="hero-btn btn btn-outline-dark">View plans</button>
+          </div>
+
+          <img class="col-md-6 hero-img" src="images/image-intro-desktop.jpg" />
+        </div>
+      </div>
+    </section>
+    We’re different Snappy Process Our application process can be completed in
+    minutes, not hours. Don’t get stuck filling in tedious forms. Affordable
+    Prices We don’t want you worrying about high monthly costs. Our prices may
+    be low, but we still offer the best coverage possible. People First Our
+    plans aren’t full of conditions and clauses to prevent payouts. We make sure
+    you’re covered when you need it. Find out more about how we work How we work
+    Our company How we work Why Insure? View plans Reviews Help me FAQ Terms of
+    use Privacy policy Cookies Contact Sales Support Live chat Others Careers
+    Press Licenses
 
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Hassan Ateeq</a>.
     </div>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"
+      integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

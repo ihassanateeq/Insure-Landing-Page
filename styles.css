@@ -1,0 +1,98 @@
+:root {
+  /* Primary Colors */
+
+  --DarkViolet: hsl(256, 26%, 20%);
+  --GrayishBlue: hsl(216, 30%, 68%);
+
+  /* Neutral Colors  */
+
+  --VeryDarkViolet: hsl(270, 9%, 17%);
+  --DarkGrayishViolet: hsl(273, 4%, 51%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "DM Serif Display", serif;
+}
+
+/* Navigation */
+
+.my-btn {
+  padding: 4px 12px;
+}
+
+/* Hero Section */
+
+.hero-section {
+  background-color: var(--DarkViolet);
+  /* background-image: url("./images/bg-pattern-intro-right-desktop.svg"),
+    url("./images/bg-pattern-intro-left-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: right -86px, left 250px; */
+  position: relative;
+  margin-bottom: 220px;
+}
+
+.hero-section::before {
+  content: "";
+  background-image: url("./images/bg-pattern-intro-left-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  z-index: 6;
+  background-size: 20% auto;
+}
+
+.hero-section::after {
+  content: "";
+  background-image: url(./images/bg-pattern-intro-right-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: right -121px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  z-index: 2;
+  background-size: 50% auto;
+}
+
+.hero-img {
+  width: 400px;
+  height: auto;
+  position: relative;
+  top: 95px;
+  left: 160px;
+  top: 73px;
+  left: 160px;
+}
+
+.bar {
+  width: 150px;
+  height: auto;
+  background-color: var(--VeryLightGray);
+  border: 2px solid var(--VeryLightGray);
+}
+
+.hero-heading {
+  color: var(--VeryLightGray);
+  font-size: 70px;
+}
+
+.hero-p {
+  color: var(--GrayishBlue);
+}
